@@ -12,55 +12,34 @@ Esta é uma API simples desenvolvida com Node.js, utilizando Prisma como ORM, e 
 
 ### Estrutura de Pastas
 
-├── generated/             # Código gerado pelo Prisma
-
+├── generated/                    # Código gerado pelo Prisma
 │   └── prisma/
-
 ├── prisma/
-
-│   └── schema.prisma      # Esquema do Prisma
-
+│   └── schema.prisma             # Esquema do Prisma
 ├── src/
-
-│   ├── controllers/       # Controladores (lógica de controle)
-
+│   ├── controllers/              # Controladores (lógica de controle)
 │   │   └── user.controller.js
-
-│   ├── middlewares/       # Middlewares customizados (em branco por enquanto)
-
+│   ├── middlewares/              # Middlewares customizados (em branco por enquanto)
 │   ├── prisma/
-
-│   │   └── client.js       # Instância do Prisma Client
-
-│   ├── routes/            # Rotas da API
-
+│   │   └── client.js             # Instância do Prisma Client
+│   ├── routes/                   # Rotas da API
 │   │   └── user.routes.js
-
-│   ├── services/          # Lógica de negócio
-
+│   ├── services/                 # Lógica de negócio
 │   │   └── user.service.js
-
-│   ├── utils/             # Funções utilitárias
+│   ├── utils/                    # Funções utilitárias
 │   │   ├── formatters.js
-
 │   │   └── validators.js
-
-│   └── app.js             # Configuração principal do app
-
-├── server.js              # Entrada do servidor
-
+│   └── app.js                    # Configuração principal do app
+├── server.js                     # Entrada do servidor
 ├── .gitignore
-
 ├── package.json
-
 ├── yarn.lock
 
 
 ### Instalação e Execução
-* Clone o repositório
+* Clone o repositório 
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
 cd nome-do-repositorio
-
 
 * Instale as dependências
 yarn install
@@ -79,22 +58,15 @@ A aplicação rodará por padrão em http://localhost:3000
 ### Exemplos de Endpoints
 
 GET /users        → Lista todos os usuários
-
 POST /users       → Cria um novo usuário
-
 PUT /users/:id    → Atualiza um usuário
-
 DELETE /users/:id → Remove um usuário
 
 ### Convenções Adotadas
 Controllers: Recebem e respondem requisições.
-
 Services: Contêm a lógica de negócio.
-
 Routes: Gerenciam os endpoints da API.
-
 Prisma: A camada de ORM que acessa o banco de dados.
-
 Utils: Funções auxiliares como validadores e formatadores.
 
 ### Scripts úteis
