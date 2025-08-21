@@ -77,9 +77,13 @@ yarn dev
 A aplicação rodará por padrão em http://localhost:3000
 
 ### Exemplos de Endpoints
+
 GET /users        → Lista todos os usuários
+
 POST /users       → Cria um novo usuário
+
 PUT /users/:id    → Atualiza um usuário
+
 DELETE /users/:id → Remove um usuário
 
 ### Convenções Adotadas
