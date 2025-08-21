@@ -58,22 +58,31 @@ Esta é uma API simples desenvolvida com Node.js, utilizando Prisma como ORM, e 
 
 
 ### Instalação e Execução
-* Clone o repositório 
+* Clone o repositório
+
   git clone https://github.com/seu-usuario/nome-do-repositorio.git
   cd nome-do-repositorio
 
+
 * Instale as dependências
+
   yarn install
+
 
 * Configure o banco de dados
 
+
 * Edite o arquivo .env com sua URL de conexão com o banco de dados:
 
+
 * Execute as migrações
-npx prisma migrate dev --name init
+
+  npx prisma migrate dev --name init
 
 * Rode o projeto
+
   yarn dev
+  
   A aplicação rodará por padrão em http://localhost:3000
 
 ### Exemplos de Endpoints
