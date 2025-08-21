@@ -1,0 +1,25 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+// Define o gerador do Prisma Client (a lib que vamos usar no código)
+generator client {
+  provider = "prisma-client-js" // Prisma vai gerar código JavaScript
+  output   = "../generated/prisma"
+}
+
+// Define o provedor do banco de dados e a string de conexão vinda do .env
+datasource db {
+  provider = "mongodb"           // Usando MongoDB como banco
+  url      = env("DATABASE_URL") // A URL está no .env
+}
+
+model User {
+  id String @id @default(auto()) @map("_id") @db.ObjectId   // id Mongo (_id)
+  name      String                                          // nome do usuário
+  age       Int                                             // Idade do usuário
+  email     String   @unique                                // e-mail único
+  createdAt DateTime @default(now())                        // data de criação 
+}
