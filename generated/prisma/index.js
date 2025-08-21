@@ -151,7 +151,7 @@ const config = {
     "db": {
       "url": {
         "fromEnvVar": "DATABASE_URL",
-        "value": "mongodb+srv://kjohn:rclYojjYvRd1FFqg@cluster0.fqwaeh8.mongodb.net/MyControl?retryWrites=true&w=majority&appName=Cluster0"
+        "value": ""
       }
     }
   },
