@@ -12,7 +12,6 @@ Esta é uma API simples desenvolvida com Node.js, utilizando Prisma como ORM, e 
 
 ### Estrutura de Pastas
 
-.
 ├── generated/             # Código gerado pelo Prisma
 │   └── prisma/
 ├── prisma/
