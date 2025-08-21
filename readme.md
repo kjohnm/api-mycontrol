@@ -13,27 +13,48 @@ Esta é uma API simples desenvolvida com Node.js, utilizando Prisma como ORM, e 
 ### Estrutura de Pastas
 
 ├── generated/             # Código gerado pelo Prisma
+
 │   └── prisma/
+
 ├── prisma/
+
 │   └── schema.prisma      # Esquema do Prisma
+
 ├── src/
+
 │   ├── controllers/       # Controladores (lógica de controle)
+
 │   │   └── user.controller.js
+
 │   ├── middlewares/       # Middlewares customizados (em branco por enquanto)
+
 │   ├── prisma/
+
 │   │   └── client.js       # Instância do Prisma Client
+
 │   ├── routes/            # Rotas da API
+
 │   │   └── user.routes.js
+
 │   ├── services/          # Lógica de negócio
+
 │   │   └── user.service.js
+
 │   ├── utils/             # Funções utilitárias
 │   │   ├── formatters.js
+
 │   │   └── validators.js
+
 │   └── app.js             # Configuração principal do app
+
 ├── server.js              # Entrada do servidor
+
 ├── .gitignore
+
 ├── package.json
+
 ├── yarn.lock
+
 
 ### Instalação e Execução
 * Clone o repositório
@@ -56,9 +77,9 @@ yarn dev
 A aplicação rodará por padrão em http://localhost:3000
 
 ### Exemplos de Endpoints
-GET /users → Lista todos os usuários
-POST /users → Cria um novo usuário
-PUT /users/:id → Atualiza um usuário
+GET /users        → Lista todos os usuários
+POST /users       → Cria um novo usuário
+PUT /users/:id    → Atualiza um usuário
 DELETE /users/:id → Remove um usuário
 
 ### Convenções Adotadas
