@@ -1,4 +1,4 @@
-# 📦 Simple API with Node.js & Prisma
+### Simple API with Node.js & Prisma
 
 Esta é uma API simples desenvolvida com Node.js, utilizando Prisma como ORM, e seguindo uma arquitetura organizada por responsabilidade. O projeto está versionado com Git e pronto para ser evoluído.
 
